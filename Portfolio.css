@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1e1e1e;
+    font-family: sans-serif;
+    color: #a0a0a0;
+    line-height: 1.6;
+}
+
+.main-container{
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 350px 1fr; 
+    gap: 40px;
+    padding-top: 40px;
+    margin: auto; /* margin:auto only left and right side me lagega. Ye apne aap hi set karega space left and right side me. Automatically center ho jaenge.*/
+}
+
+
+/* SideBar */
+.sidebar{
+    height: 90vh;
+    background-color: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 16px;
+    padding: 30px;
+    position: sticky;
+    top: 40px;
+}
+
+
+/* Profile section */
+.profile {
+    text-align: center; /* inline elements ko center karega */
+}
+
+.profile img{
+    height:120px;
+    width:120px;
+    border-radius: 50%;
+    border: 1px solid #3a3a3a;
+}
+
+.profile h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #e0e0e0;
+}
+
+.profile p{
+    background-color: #1e1e1e;
+    color: #FFBF00;
+    padding:5px 15px;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+
+/* Contact information */
+.contact{
+    margin-top: 20px;
+    border-top: 2px solid #3a3a3a;
+    padding: 30px 0px;
+}
+
+.email{
+   margin-bottom: 15px;
+}
+
+.phone{
+   margin-bottom: 15px;
+}
+
+.value{
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+.label{
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #a0a0a0;
+}
+
+
+/* Social Media */
+.social{
+    margin-top: 10  px;
+    border-top: 2px solid #3a3a3a;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.social img{
+    height: 24px;
+    width: 24px;
+    margin-left: 5px;
+    filter:grayscale(1) invert(0.7);
+}
+
+.social img:hover{
+    filter: grayscale(1);
+    cursor: pointer;
+}
+
+
+/* Main-Content */
+.main-content{
+    background-color: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+
+/* Navigation Bar */
+#navbar{
+    border-bottom: 2px solid #3a3a3a;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+}
+
+nav a{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.active , nav a:hover{
+    color:#FFBF00 ;
+}
+
+
+/* About me */
+.heading{
+    color: #e0e0e0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.line{
+    width: 50px;
+    height: 5px;
+    background-color: #FFBF00;
+    margin-bottom: 15px;
+}
+
+.content{
+    text-align: justify;
+    margin-top: 20px;
+}
+
+#about{
+    margin-bottom:40px; 
+}
+
+
+/* Skills */
+.grid-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(100px,1fr));
+    gap: 40px;
+}
+
+.item{
+    border: 2px solid #3a3a3a;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    margin-top: 20px;
+    transition: transform 0.3s ease, boxshadow 0.3s ease;
+}
+
+.item img{
+    height: 50px;
+    filter: brightness(0) saturate(100%) invert(70%) sepia(84%) saturate(1098%) hue-rotate(358deg) brightness(99%) contrast(105%);
+    margin-bottom: 15px;
+}
+
+.item h3{
+    font-size: 1rem;
+    font-weight: 500px;
+}
+
+.item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+}
+
+
+/* Education */
+#education{
+    margin-top: 30px;
+}
+
+.edfirst, .edsecond{
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.edtech{
+    position:relative;
+    margin-top: 20px;
+}
+
+.year{
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    margin-bottom:5px;
+}
+
+.degree{
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.school{
+    font-style: italic;
+    color: #a0a0a0;
+    margin-bottom: 10px
+}
+
+.goal{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 3px solid #FFBF00;
+    position:absolute;
+    top:4px;
+    left: 0px;
+    z-index: 5;
+}
+
+.line1{
+    width: 4px;
+    border:2px solid #3a3a3a;
+    position:absolute;
+    top:0px;
+    bottom: 0px;
+    left: 5px;
+}
+
+
+/* Portfolio */
+.projects-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.projects img{
+    height: 180px;
+    width: 100%;
+    object-fit: cover; /* ye image ko proper tarike se zoom out karta hai with equal ratio*/
+}
+
+.projects{
+    margin-top: 20px;
+    border: 1px solid #3a3a3a;
+    border-radius: 12px;
+    background-color: #1e1e1e;
+    overflow: hidden;
+    transition: transform 0.3s ease, boxshadow 0.3s ease;
+}
+
+.projects:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+}
+
+.card{
+    padding: 20px;
+}
+
+.card a{
+    color: #e0e0e0;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.card span{
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: #FFBF00;
+    background-color: rgba(255,191,0,0.1);
+    margin-right: 5px;
+    font-size: 0.75rem;
+}
+
+.card p{
+    color: #a0a0a0;
+    line-height: 1.6;
+    text-align: start;
+    margin-bottom: 15px;
+}
+
+@media  screen and (max-width:1200px) {
+    .main-container{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .sidebar{
+        position: static;
+        height: auto;
+    }
+}
+
+@media  screen and (max-width:1000px) {
+    .main-container{
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 350px 1fr;
+    }
+    .sidebar{
+        position: sticky;
+        height: 120vh;
+        top: 20px;
+    }
+    .grid-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(120px,1fr));
+    gap: 30px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .grid-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(120px,1fr));
+    gap: 30px;
+    }
+    .projects-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    }
+}
+
+@media  screen and (max-width:730px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+        gap: 30px;
+    }
+}
+
+@media  screen and (max-width:605px) {
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }   
+    
+    .sidebar{
+        position: static;
+        width:100x;
+        top: 20px;
+    }
+}
+
+@media  screen and (max-width:370px) {
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+    }
+}

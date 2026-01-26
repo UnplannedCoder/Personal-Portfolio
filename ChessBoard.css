@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(8,1fr);
+    grid-template-columns: repeat(8,1fr);
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/ /*agar container ke andar children overflow kar rhe hai to vaha fr(fraction) ka concept aata hai */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    height: 400px;
+    width: 400px;
+    background-color: black;    
+}
+
+.white{
+    background-color: bisque;
+    font-size: 40px;
+    text-align: center;
+} 
+
+.brown{
+    background-color: rgb(240, 70, 70);
+    font-size: 40px;
+    text-align: center;
+}
+
+#box{
+    position: relative;
+    bottom: 240px;
+    left: 290px;
+}
+
+.pieces{
+    color: white;
+}
+
+

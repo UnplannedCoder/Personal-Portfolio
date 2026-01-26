@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./Register.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Register Here</h1>
+        <div>
+            <form action="submit">
+                <div class="name-row">
+                    <div class="form-group">
+                        <label for="fname" style="color: black;">First Name:</label>
+                        <input type="text" id="fname" name="name" placeholder="Enter First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lname" style="color: black;">Last Name:</label>
+                        <input type="text" id="lname" name="name" placeholder="Enter Last Name" required>
+                    </div>
+                </div>
+                <div id="emailAdd">
+                    <div>
+                        <label for="email" style="color: black;">Email Address</label>
+                    </div>
+                    <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                </div>
+                <div id="phoneNumber">
+                    <label for="phone" style="color: black;">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" required>
+                </div>
+                <div class="front">
+                    <div id="City">
+                        <label for="city" style="color: black;">City</label>
+                        <select name="city" id="selCity">
+                            <option value="city">Select your City</option>
+                            <option value="newyork">New York</option>
+                            <option value="paris">Paris</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="delhi">Delhi</option>
+                            <option value="kolkata">Kolkata</option>
+                        </select>
+                    </div>
+                    <div id="Country">
+                        <label for="country" style="color: black;">Country</label>
+                        <select name="country" id="selCountry">
+                            <option value="country">Select your Country</option>
+                            <option value="usa">United States</option>
+                            <option value="france">France</option>
+                            <option value="india">India</option>
+                            <option value="germany">Germany</option>
+                            <option value="australia">Australia</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="btn">
+                    <button type="submit">Register</button>
+                </div>
+                <div id="mid">
+                    <p style="color: black;" >Already Have an Account?
+                    <a href="./Login.html">Login</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
